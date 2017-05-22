@@ -1,0 +1,34 @@
+
+<!--/********************************************************************************
+ * Angular login template
+ *********************************************************************************
+ * Author: Ultra Bytes
+ * Email: 
+ * Website: http://www.bytesultra.com/
+ *
+ * File: login.tpl.html
+ * Version: 1.0
+ * Copyright: (c) 2017 - Ultra Bytes
+ * You are free to use, distribute, and modify this software
+ * under the terms of the GNU General Public License. See the
+ * included license.txt file.
+ *
+ ********************************************************************************/-->
+<div class="container">
+	<div class="form-blk">
+	<form role="form" name="form1">
+	<div class="form-group">
+	<p>Welcome: {{user.mail}}</p>
+	<label>Mail</label>
+	<input type="text" name="" placeholder="Enter name" class="form-control" ng-model="user.mail" required>
+	</div>
+	<div class="form-group">
+	
+	<label>Password</label>
+	<input type="password" name="" placeholder="password" class="form-control" ng-model="user.pass" required>
+	</div>
+	<button class="btn btn-default" type="submit" ng-click="login(user)" ng-disabled="form1.$invalid">Submit</button>
+	<p class="cls-msg">{{msg}}</p>
+	</form>
+	</div>
+</div>
